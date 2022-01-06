@@ -16,8 +16,8 @@ namespace LogAn_C3.UnitTests
 
             bool result = log.IsValidLogFileName("short.ext");
             Assert.True(result);
-            
         }
+
     }
 
     internal class FakeExtensionManager : IExtensionManager

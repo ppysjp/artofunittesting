@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace HigherOrderAbstractions
 {
-    public class ApplyFunctionToInteger
+    public class ApplyFunctionToNumber
     {
 
-        public static int SumNPFI(int n, Func<int, bool> p, Func<int, int> f, Func<int, int> inc)
+        public static long SumNPFI(long n, Func<long, bool> p, Func<long, long> f, Func<long, long> inc)
         {
-            /// <summary>Returns the value of integer n if the predicate is satisfied,
+            /// <summary>Returns the value of longeger n if the predicate is satisfied,
             /// otherwise it returns the following sum: f(n) + f(inc(n)) + f(inc(inc(n))) ... 
             /// until the argument of f satisfies the predicate
             /// </summary>
@@ -22,7 +22,7 @@ namespace HigherOrderAbstractions
             };
         }
 
-        public static int ComposeNPF(int n, Func<int, bool> p, Func<int, int> f)
+        public static long ComposeNPF(long n, Func<long, bool> p, Func<long, long> f)
         {
             /// <summary>Returns the value f(n) if the predicate is satisfied,
             /// otherwise it returns: f(f(f(...f(n)...))) until this satisfies the predicate. 

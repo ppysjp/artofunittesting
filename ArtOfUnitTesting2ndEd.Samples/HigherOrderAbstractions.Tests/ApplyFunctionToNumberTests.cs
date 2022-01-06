@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace HigherOrderAbstractions.Tests
 {
     [TestFixture]
-    public class ApplyFunctionToIntegerTests
+    public class ApplyFunctionToNumberTests
     {
 
     }
