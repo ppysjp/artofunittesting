@@ -10,17 +10,12 @@ namespace _6kyu
         public static bool IsValidWalk(string[] walk)
         {
             // this is a collection so we should be using Linq! 
-            var DirectionWeights = new Dictionary<string, int>()
-                {
-                    { "n", 2 },
-                    { "s", -2 },
-                    { "e", 1 },
-                    { "w", -1 },
-                };
+            var numberOfNorths = walk.Count(w => w == "n");
+            var numberOfSouths = walk.Count(w => w == "s");
+            var numberOfEasts = walk.Count(w => w == "e");
+            var numberOfWests = walk.Count(w => w == "w");
 
-            int[] ints = Array.ConvertAll(walk, w => DirectionWeights[w]);
-
-            return ints.Sum() == 0;
+            return numberOfNorths == numberOfSouths && numberOfEasts == numberOfWests && walk.Length == 10;
         }
     }
 }
