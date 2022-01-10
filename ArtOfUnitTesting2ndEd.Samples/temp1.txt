@@ -1,0 +1,10 @@
+
+using Dpr.ThinkingData.Registers.BackOffice.Mortgage.Interfaces.Model.Fma;
+using Dpr.Fma.Bsl.Activities.Utils;
+
+using Dpr.ThinkingCommunicator.Registers.DocumentStore.Interfaces;
+using Dpr.ThinkingCommunicator.Registers.DocumentStore.Interfaces.Model;
+using Dpr.Fma.Bsl.Interfaces.Workflow.Constants;
+using Dpr.Fma.Bsl.Activities.Constants;
+using System.Xml.Serialization;
+using System.IO;

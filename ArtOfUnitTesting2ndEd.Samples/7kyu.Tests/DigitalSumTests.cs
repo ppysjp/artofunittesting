@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace _7kyu.Tests
 {
+    [TestFixture]
     class DigitalSumTests
     {
         [TestCase(3, 3)]
