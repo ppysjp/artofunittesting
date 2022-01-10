@@ -12,7 +12,7 @@ namespace _7kyu.Tests
         [TestCase("0", 0)]
         [TestCase("1", 1)]
         [TestCase("10", 2)]
-        [TestCase("101", 5)]
+        [TestCase("101", 5)]        
         [TestCase("1010101", 85)]
         public static void BinaryToDecimal(string n, int expected)
         {

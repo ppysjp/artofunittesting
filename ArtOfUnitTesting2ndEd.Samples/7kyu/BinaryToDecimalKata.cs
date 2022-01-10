@@ -20,12 +20,13 @@ namespace _7kyu
         public static long BinaryToDecimal(string bin)
         {
             long n = Convert.ToInt32(bin);
-            return SumLastDigitsMultipliedByRespectiveBase2Exponents(n, 0, MultiplyLastDigitByBase2Exponent); 
+            return SumLastDigitMultipliedByRespectiveBase2Exponent(n, 0, MultiplyLastDigitByBase2Exponent); 
         }
 
-        private static long SumLastDigitsMultipliedByRespectiveBase2Exponents(long a, long b, Func<long, long, long> f) => ApplyFunctionToNumber.SumABPFI(a, b, IsEqualToZero, MultiplyLastDigitByBase2Exponent, DivideBy10, Inc);
-        private static long MultiplyLastDigitByBase2Exponent(long a, long b) => LastDigit(a) * Base2Exponent(2, b);
-        private static long Base2Exponent(long a, long b) => ApplyFunctionToNumber.MulABPFI(a, b, IsEqualToZero, Identity, Dec);
+        private static long SumLastDigitMultipliedByRespectiveBase2Exponent(long a, long b, Func<long, long, long> f) => ApplyFunctionToNumber.SumABPFI(a, b, IsEqualToZero, MultiplyLastDigitByBase2Exponent, DivideBy10, Inc);
+        private static long MultiplyLastDigitByBase2Exponent(long a, long b) => LastDigit(a) * Base2Exponent(b);
+        private static long Base2Exponent(long b) => Exponent(2, b);
+        private static long Exponent(long a, long b) => ApplyFunctionToNumber.MulABPFI(a, b, IsEqualToZero, Identity, Dec);
         private static long LastDigit(long n) => n % 10;
         private static long DivideBy10(long n) => n / 10;
         private static long Inc(long n) => n + 1;
