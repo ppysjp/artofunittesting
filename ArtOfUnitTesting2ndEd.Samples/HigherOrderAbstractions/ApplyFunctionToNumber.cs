@@ -37,15 +37,15 @@ namespace HigherOrderAbstractions
             return result + n;
         }
 
-        public static long SumABPFI(long a, long b, Func<long, bool> p, Func<long, long, long> f, Func<long, long> i, Func<long, long> j)
+        public static long SumABPFI(long a, long b, Func<long, bool> p, Func<long, long, long> f, Func<long, long, long> i, Func<long, long, long> j)
         {
             if (p(a))
             {
-                return a;
+                return f(a, b);
             }
             else
             {
-                return f(a, b) + SumABPFI(i(a), j(b), p, f, i, j);
+                return f(a, b) + SumABPFI(i(a, b), j(a, b), p, f, i, j);
             }
         }
 
