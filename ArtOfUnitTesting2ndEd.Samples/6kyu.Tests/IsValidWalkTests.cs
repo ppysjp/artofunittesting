@@ -6,11 +6,8 @@ using System;
 
 namespace _6kyu.Tests
 {
-    class IsValidWalkTests
-    {
-
-     [TestFixture]
-    public class SolutionTest
+    [TestFixture]
+    public class IsValidWalkTests
     {
         [Test]
         public void IsValidWalk_True()
@@ -27,4 +24,4 @@ namespace _6kyu.Tests
          }
     }
 }
-}
+
