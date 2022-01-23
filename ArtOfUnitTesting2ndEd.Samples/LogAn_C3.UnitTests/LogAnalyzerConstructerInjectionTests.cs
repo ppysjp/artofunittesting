@@ -4,29 +4,23 @@ using NUnit.Framework;
 namespace LogAn_C3.UnitTests
 {
     [TestFixture]
-    public class LogAnalyzerTests
+    public class LogAnalyzerConstructerInjectionTests
     {
         [Test]
         public void IsValidFileName_NameSupportedExtension_ReturnsTrue()
         {
+            // Arrange
             FakeExtensionManager myFakeManager = new FakeExtensionManager();
             myFakeManager.WillBeValid = true;
+            LogAnalyzerConstructorInjection log = new LogAnalyzerConstructorInjection(myFakeManager);
 
-            LogAnalyzer log = new LogAnalyzer(myFakeManager);
-
+            //Act
             bool result = log.IsValidLogFileName("short.ext");
+
+            //Assert
             Assert.True(result);
+
         }
 
-    }
-
-    internal class FakeExtensionManager : IExtensionManager
-    {
-        public bool WillBeValid = false;
-
-        public bool IsValid(string fileName)
-        {
-            return WillBeValid;
-        }
     }
 }

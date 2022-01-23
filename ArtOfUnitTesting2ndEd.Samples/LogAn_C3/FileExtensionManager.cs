@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace LogAn_C3
+﻿namespace LogAn_C3
 {
-    public class FileExtensionManager : IExtensionManager
+    internal class FileExtensionManager : IExtensionManager
     {
         public bool IsValid(string fileName)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
