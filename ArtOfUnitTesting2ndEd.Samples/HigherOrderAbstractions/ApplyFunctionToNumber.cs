@@ -28,13 +28,7 @@ namespace HigherOrderAbstractions
             /// otherwise it returns the following sum: f(n) + f(inc(n)) + f(inc(inc(n))) ... 
             /// until the argument of f satisfies the predicate
             /// </summary>
-            long result = 0;
-            while (!p(n))
-            {
-                result += f(n);
-                n = inc(n);
-            }
-            return result + n;
+
         }
 
         public static long SumABPFI(long a, long b, Func<long, bool> p, Func<long, long, long> f, Func<long, long, long> i, Func<long, long, long> j)
