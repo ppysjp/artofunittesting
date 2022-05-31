@@ -73,9 +73,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5kyu", "5kyu\5kyu.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD", "TDD", "{388A1624-9B23-463A-AF5D-3A254E71EEEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiCurrencyMoney", "MultiCurrencyMoney\MultiCurrencyMoney.csproj", "{AE255D4C-81DC-4BED-8FAF-07CFD41EDCD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiCurrencyMoney", "MultiCurrencyMoney\MultiCurrencyMoney.csproj", "{AE255D4C-81DC-4BED-8FAF-07CFD41EDCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiCurrencyMoneyTests", "MultiCurrencyMoneyTests\MultiCurrencyMoneyTests.csproj", "{53AF20AF-0BF9-4D5E-9E01-0EA0522B0598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiCurrencyMoneyTests", "MultiCurrencyMoneyTests\MultiCurrencyMoneyTests.csproj", "{53AF20AF-0BF9-4D5E-9E01-0EA0522B0598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SICPChapter3", "SICPChapter3\SICPChapter3.csproj", "{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -381,6 +383,18 @@ Global
 		{53AF20AF-0BF9-4D5E-9E01-0EA0522B0598}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{53AF20AF-0BF9-4D5E-9E01-0EA0522B0598}.Release|x86.ActiveCfg = Release|Any CPU
 		{53AF20AF-0BF9-4D5E-9E01-0EA0522B0598}.Release|x86.Build.0 = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Debug|x86.Build.0 = Debug|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|x86.ActiveCfg = Release|Any CPU
+		{D24B790D-F613-4A8E-8025-5FF8E97D5B0D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,18 +4,30 @@ namespace MultiCurrencyMoney
 {
     public class Dollar
     {
-        private int v;
+        private int _amount;
 
-        public Dollar(int v)
+        public Dollar(int amount)
         {
-            this.v = v;
+            _amount = amount;
         }
 
-        public double amount { get; set; }
-
-        public void Times(int v)
-        {
-            throw new NotImplementedException();
+        public int Amount 
+        { get => _amount;
+          set => _amount = value; 
         }
+
+        public Dollar Times(int multiplier)
+        {
+            return new Dollar(_amount *= multiplier);
+        }
+
+        public override bool Equals(Object obj) 
+        {
+
+            Dollar dollar = (Dollar) obj;
+            return _amount == dollar._amount;
+        }
+
+
     }
 }

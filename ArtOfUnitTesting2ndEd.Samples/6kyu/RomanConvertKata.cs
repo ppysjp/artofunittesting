@@ -62,6 +62,9 @@ namespace _6kyu
             };
         }
 
+        // To refactor the below better you want to create a class that has a dictionary and takes the value n and 
+        // then uses the dictionary
+
         private static Dictionary<int, Func<int, string>> BuildReduceNumeralFunctions()
         {
             return new Dictionary<int, Func<int, string>>()
@@ -90,6 +93,9 @@ namespace _6kyu
             };
         }
 
+
+        // There is code repetition of NBetweenAAndB, work out how to fix it. 
+
         private static bool Between900And1000(int n) => NBetweenAAndB(n, 900, 1000);
         private static bool Between500And900(int n) => NBetweenAAndB(n, 500, 900);
         private static bool Between400And500(int n) => NBetweenAAndB(n, 400, 500);
@@ -101,6 +107,8 @@ namespace _6kyu
         private static bool Between5And9(int n) => NBetweenAAndB(n, 5, 9);
         private static bool Between1And4(int n) => NBetweenAAndB(n, 1, 4);
 
+        // There is code repetition of BuildNumeral, work out how to fix it. 
+
         private static string BuildNumeral900And1000(int n) => BuildNumeral(n, 900);
         private static string BuildNumeral500And900(int n) => BuildNumeral(n, 500);
         private static string BuildNumeral400And500(int n) => BuildNumeral(n, 400);
@@ -111,6 +119,8 @@ namespace _6kyu
         private static string BuildNumeral10And40(int n) => BuildNumeral(n, 10);
         private static string BuildNumeral5And9(int n) => BuildNumeral(n, 5);
         private static string BuildNumeral1And4(int n) => BuildNumeral(n, 1);
+
+        // There is code repetition of ReduceNumeral, work out how to fix it. 
 
         private static string Reduce900(int n) => ReduceNumeral(n, 100);
         private static string Reduce400(int n) => ReduceNumeral(n, 100);
